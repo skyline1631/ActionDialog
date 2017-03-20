@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Copyright (C) 2017 Legolas Kwok.
+
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+
+  http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+-->
+
+<resources>
+    <!-- Action Dialog -->
+    <dimen name="sky_action_dialog_item_height">50dip</dimen>
+    <dimen name="sky_action_dialog_group_gap">8dip</dimen>
+    <dimen name="sky_action_dialog_body_padding">10dip</dimen>
+    <dimen name="sky_action_dialog_text_gap">12dip</dimen>
+    <dimen name="sky_action_dialog_item_padding">10dip</dimen>
+
+    <!-- Scroll -->
+    <dimen name="sky_scroll_bar_thumb_size">2dip</dimen>
+
+    <!-- Divider -->
+    <dimen name="sky_divider_line_size">1px</dimen>
+
+    <!-- Text -->
+    <dimen name="sky_action_text_size_title">13sp</dimen>
+    <dimen name="sky_action_text_size_message">13sp</dimen>
+    <dimen name="sky_action_text_size_item">15sp</dimen>
+</resources>

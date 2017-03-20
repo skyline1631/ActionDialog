@@ -1,0 +1,41 @@
+apply plugin: 'com.android.library'
+apply plugin: 'com.novoda.bintray-release'
+
+android {
+    compileSdkVersion 25
+    buildToolsVersion "25.0.2"
+
+    defaultConfig {
+        minSdkVersion 11
+        targetSdkVersion 25
+        versionCode 1
+        versionName "1.0"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    /* Local */
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+
+    /* Support */
+    compile 'com.android.support:appcompat-v7:25.2.0'
+
+    /* Round Corner Layout */
+    compile 'com.skyline.widget:round-corner-layout:1.0.1'
+}
+
+publish {
+    userOrg = 'skyline1631'
+    groupId = 'com.skyline.widget'
+    artifactId = 'action-dialog'
+    publishVersion = '1.0.1'
+    desc = 'A action sheets dialog for Android.'
+    website = 'https://github.com/skyline1631/ActionDialog'
+}

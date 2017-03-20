@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Action Dialog</string>
+    <string name="dialog_title_android">Android Platform Version</string>
+    <string name="dialog_message_android">Android\'s releases are named after sweets or dessert items, except for the first and second releases.</string>
+</resources>

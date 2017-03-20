@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Copyright (C) 2017 Legolas Kwok.
+
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+
+  http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+-->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/sky_action_dialog_body_padding"
+    android:orientation="vertical">
+
+    <com.skyline.widget.layout.RoundCornerLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/sky_action_dialog_layout_header"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="@dimen/sky_action_dialog_text_gap"
+                    android:background="@color/sky_action_dialog_white"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/sky_action_dialog_text_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:textStyle="bold"
+                        android:textSize="@dimen/sky_action_text_size_title"
+                        android:textColor="@color/sky_action_dialog_gray"
+                        tools:text="@string/sky_debug_text" />
+
+                    <TextView
+                        android:id="@+id/sky_action_dialog_text_message"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/sky_action_dialog_text_gap"
+                        android:layout_marginBottom="@dimen/sky_action_dialog_text_gap"
+                        android:gravity="center_horizontal"
+                        android:textSize="@dimen/sky_action_text_size_message"
+                        android:textColor="@color/sky_action_dialog_gray"
+                        tools:text="@string/sky_debug_text" />
+                </LinearLayout>
+
+                <include
+                    layout="@layout/sky_list_divider" />
+            </LinearLayout>
+
+            <ListView
+                android:id="@+id/sky_action_dialog_list_content"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:divider="@color/sky_divider_line"
+                android:dividerHeight="@dimen/sky_divider_line_size"
+                android:listSelector="@android:color/transparent"
+                android:cacheColorHint="@android:color/transparent"
+                android:scrollbarStyle="insideOverlay"
+                android:scrollbarSize="@dimen/sky_scroll_bar_thumb_size"
+                android:scrollbarThumbVertical="@color/sky_scroll_bar_thumb" />
+        </LinearLayout>
+    </com.skyline.widget.layout.RoundCornerLayout>
+
+    <com.skyline.widget.layout.RoundCornerLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/sky_action_dialog_group_gap">
+
+        <RelativeLayout
+            android:id="@+id/sky_action_dialog_layout_cancel"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/sky_action_dialog_item_height"
+            android:paddingLeft="@dimen/sky_action_dialog_item_padding"
+            android:paddingRight="@dimen/sky_action_dialog_item_padding"
+            android:focusable="true"
+            android:clickable="true"
+            android:background="@drawable/sky_list_item_bg">
+
+            <TextView
+                android:id="@+id/sky_action_dialog_text_cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:lines="1"
+                android:ellipsize="middle"
+                android:text="@android:string/cancel"
+                android:textStyle="bold"
+                android:textSize="@dimen/sky_action_text_size_item"
+                android:textColor="@color/sky_action_dialog_blue" />
+        </RelativeLayout>
+    </com.skyline.widget.layout.RoundCornerLayout>
+
+</LinearLayout>

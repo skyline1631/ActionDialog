@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="mobile_os_entries">
+        <item>iOS</item>
+        <item>Android</item>
+        <item>BlackBerry</item>
+        <item>Windows Phone</item>
+    </string-array>
+
+    <string-array name="android_version_entries">
+        <item>1.0</item>
+        <item>1.1 – Alpha</item>
+        <item>1.2 – Beta</item>
+        <item>1.5 – Cupcake</item>
+        <item>1.6 – Donut</item>
+        <item>2.0, 2.0.1, 2.1 – Eclair</item>
+        <item>2.2.x – Froyo</item>
+        <item>2.3, 2.3.3 – Gingerbread</item>
+        <item>3.0, 3.1, 3.2 – Honeycomb</item>
+        <item>4.0, 4.03 – Ice Cream Sandwich</item>
+        <item>4.1, 4.2, 4.3 – Jelly Bean</item>
+        <item>4.4.4 – KitKat</item>
+        <item>5.x – Lollipop</item>
+        <item>6.0, 6.0.1 – Marshmallow</item>
+        <item>7.0, 7.1, 7.1.1 – Nougat</item>
+    </string-array>
+</resources>
