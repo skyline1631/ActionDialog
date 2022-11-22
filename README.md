@@ -3,7 +3,7 @@ ActionDialog
 [![Build Status](https://travis-ci.org/skyline1631/ActionDialog.svg?branch=master)](https://travis-ci.org/skyline1631/ActionDialog)
 [ ![Download](https://api.bintray.com/packages/skyline1631/maven/action-dialog/images/download.svg?version=1.0.1) ](https://bintray.com/skyline1631/maven/action-dialog/1.0.1/link)
 
-A action sheets dialog for Android, which representing similar UI to the UIActionSheet in iOS.
+An action sheets dialog for Android, which representing similar UI to the UIActionSheet on iOS.
 
 Snapshot
 ----------
